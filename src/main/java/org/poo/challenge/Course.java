@@ -1,38 +1,25 @@
 package org.poo.challenge;
 
-public class Course {
 
-    private String title;
-    private String description;
+public class Course extends Content{
+
     private int workLoad;
 
-    @Deprecated
-    public Course() {
-    }
-
     public Course(String title, String description, int workLoad) {
-        this.title = title;
-        this.description = description;
+        super(title, description);
         this.workLoad = workLoad;
     }
 
-    public String getTitle() {
-        return title;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public int getWorkLoad() {
-        return workLoad;
+    @Override
+    public double xpCalculate() {
+        return XP_PATTERN + workLoad;
     }
 
     @Override
     public String toString() {
         return "Course{" +
-                "title='" + title + '\'' +
-                ", description='" + description + '\'' +
+                "title='" + getTitle() + '\'' +
+                ", description='" + getDescription() + '\'' +
                 ", workLoad=" + workLoad +
                 '}';
     }

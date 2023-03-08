@@ -1,39 +1,27 @@
 package org.poo.challenge;
 
-public class Mentoring {
+import java.time.LocalDate;
 
-    private String title;
-    private String description;
-    private int workLoad;
+public class Mentoring extends Content{
 
-    @Deprecated
-    public Mentoring() {
+    private LocalDate date;
+
+    public Mentoring(String title, String description, LocalDate date) {
+        super(title, description);
+        this.date = date;
     }
 
-    public Mentoring(String title, String description, int workLoad) {
-        this.title = title;
-        this.description = description;
-        this.workLoad = workLoad;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public int getWorkLoad() {
-        return workLoad;
+    @Override
+    public double xpCalculate() {
+        return xpCalculate() + 20d;
     }
 
     @Override
     public String toString() {
         return "Mentoring{" +
-                "title='" + title + '\'' +
-                ", description='" + description + '\'' +
-                ", workLoad=" + workLoad +
+                "title='" + getTitle() + '\'' +
+                ", description='" + getDescription() + '\'' +
+                ", date=" + date +
                 '}';
     }
 }

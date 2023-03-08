@@ -3,13 +3,15 @@ package org.poo;
 import org.poo.challenge.Course;
 import org.poo.challenge.Mentoring;
 
+import java.time.LocalDate;
+
 public class Main {
     public static void main(String[] args) {
 
-        Course course1 = new Course("java", "OO", 10);
-        Mentoring mentoring = new Mentoring("java", "OO", 12);
+        Course course = new Course("java", "OO", 10);
+        Mentoring mentoring = new Mentoring("Java", "OO", LocalDate.now());
 
-        System.out.println(course1);
+        System.out.println(course);
         System.out.println(mentoring);
     }
 }
