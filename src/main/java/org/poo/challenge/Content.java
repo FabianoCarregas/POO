@@ -1,7 +1,6 @@
 package org.poo.challenge;
 
 public abstract class Content {
-
     public static final double XP_PATTERN = 10d;
     private String title;
     private String description;

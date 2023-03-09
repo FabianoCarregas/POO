@@ -7,7 +7,6 @@ import java.util.Objects;
 import java.util.Set;
 
 public class Bootcamp {
-
     private String name;
     private String description;
     private LocalDate startDate = LocalDate.now();

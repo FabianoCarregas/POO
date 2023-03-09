@@ -1,9 +1,7 @@
 package org.poo.challenge;
-
 import java.time.LocalDate;
 
 public class Mentoring extends Content{
-
     private LocalDate date;
 
     public Mentoring(String title, String description, LocalDate date) {

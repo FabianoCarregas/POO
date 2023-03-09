@@ -1,8 +1,6 @@
 package org.poo.challenge;
 
-
 public class Course extends Content{
-
     private int workLoad;
 
     public Course(String title, String description, int workLoad) {

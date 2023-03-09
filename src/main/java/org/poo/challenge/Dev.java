@@ -6,7 +6,6 @@ import java.util.Optional;
 import java.util.Set;
 
 public class Dev {
-
     private String name;
     private Set<Content> subscribedContent = new LinkedHashSet<>();
     private Set<Content> finishedContent = new LinkedHashSet<>();
